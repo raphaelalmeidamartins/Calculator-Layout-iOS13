@@ -19,13 +19,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="saF-lf-bgd" userLabel="Grid">
                                 <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-i9-XzD">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGA-CK-a4A" userLabel="ResultView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="20"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-i9-XzD">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="135"/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="20"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="gC2-i9-XzD" secondAttribute="bottom" id="B9Y-Ba-Tve"/>
+                                            <constraint firstItem="gC2-i9-XzD" firstAttribute="leading" secondItem="sGA-CK-a4A" secondAttribute="leading" constant="20" id="kog-uW-9Py"/>
+                                            <constraint firstAttribute="trailing" secondItem="gC2-i9-XzD" secondAttribute="trailing" constant="20" id="niO-6t-07o"/>
+                                            <constraint firstItem="gC2-i9-XzD" firstAttribute="top" secondItem="sGA-CK-a4A" secondAttribute="top" id="xYJ-3i-yZX"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="xxK-Ia-NN9" userLabel="FirstRow">
                                         <rect key="frame" x="0.0" y="136" width="414" height="134.5"/>
                                         <subviews>
